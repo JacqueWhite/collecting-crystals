@@ -1,0 +1,22 @@
+game
+
+gem 1 = some random number 1-12
+gem 2 = some random number 1-12
+gem 3 = some random number 1-12
+gem 4 = some random number 1-12
+
+currentSum = value of gem clicked + value of gem clicked +....
+targetSum = some random number
+
+
+set wins to 0
+set losses to 0
+
+on click of any gem, add value to currentSum in html
+
+if targetSum === currentSum, add 1 to wins
+
+if targetSum >= currentSum, add 1 to wins
+
+if targetSum <= currentSum, add 1 to wins
+
