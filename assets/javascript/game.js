@@ -36,13 +36,13 @@ $("#crystalOne").on("click", function(){
 	calculatedScore += valueCrystalOne;
 	$("#newScore").html(calculatedScore);
 
-	if (calculatedScore >= random) {
-		losses ++;
-		$("#losses").html("Losses: " + losses);
+	if(calculatedScore == random) {
+		wins ++;
+		$("#wins").html("Wins: " + wins++);
 		reset ();
-	} else if (calculatedScore === random) {
-		wins++;
-		$("#wins").html("Win total: " + wins);
+	} else if(calculatedScore > random) {
+		losses ++;
+		$("#losses").html("Losses: " + losses++);
 		reset ();
 	};
 
@@ -53,13 +53,13 @@ $("#crystalTwo").on("click", function(){
 	calculatedScore += valueCrystalTwo;
 	$("#newScore").html(calculatedScore);
 
-	if (calculatedScore >= random) {
-		losses ++;
-		$("#losses").html("Losses: " + losses);
+	if(calculatedScore == random) {
+		wins ++;
+		$("#wins").html("Wins: " + wins++);
 		reset ();
-	} else if (calculatedScore === random) {
-		wins++;
-		$("#wins").html("Win total: " + wins);
+	} else if(calculatedScore > random) {
+		losses ++;
+		$("#losses").html("Losses: " + losses++);
 		reset ();
 	};
 
@@ -69,13 +69,13 @@ $("#crystalThree").on("click", function(){
 	calculatedScore += valueCrystalThree;
 	$("#newScore").html(calculatedScore);
 
-	if (calculatedScore >= random) {
-		losses ++;
-		$("#losses").html("Losses: " + losses);
+	if(calculatedScore == random) {
+		wins ++;
+		$("#wins").html("Wins: " + wins++);
 		reset ();
-	} else if (calculatedScore === random) {
-		wins++;
-		$("#wins").html("Win total: " + wins);
+	} else if(calculatedScore > random) {
+		losses ++;
+		$("#losses").html("Losses: " + losses++);
 		reset ();
 	};
 
@@ -85,13 +85,13 @@ $("#crystalFour").on("click", function(){
 	calculatedScore += valueCrystalFour;
 	$("#newScore").html(calculatedScore);
 
-	if (calculatedScore >= random) {
-		losses ++;
-		$("#losses").html("Losses: " + losses);
+	if(calculatedScore == random) {
+		wins ++;
+		$("#wins").html("Wins: " + wins++);
 		reset ();
-	} else if (calculatedScore === random) {
-		wins++;
-		$("#wins").html("Win total: " + wins);
+	} else if(calculatedScore > random) {
+		losses ++;
+		$("#losses").html("Losses: " + losses++);
 		reset ();
 	};
 
