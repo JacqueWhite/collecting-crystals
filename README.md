@@ -1,2 +1,2 @@
-# week-four-game
-simple crystal game utilizing jQuery
+# collecting-crystals
+a crystal collector game utilizing jQuery
