@@ -1,13 +1,11 @@
-div.row { 
-	border: 1px solid grey;
+body, html {
+	background-color: black;
+	color: snow;
+	height: 100%;
+	align-content: center;
+	margin-top: 2rem;
 }
 
-.col {
-	border: 1px solid grey;
+img {
+	max-height: 100px; 
 }
-
-.btn-group {
-	display: inline-block;
-}
-
-

@@ -1,85 +1,67 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html>
+
 <head>
-	<title>Crystals Collector!</title>
-
-	<!-- Latest compiled and minified jQuery -->
-<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-	<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-<link rel="stylesheet" href="assets/css/style.css">
-
-  
+    <title>You're a Gem!</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
-<div class="container">
-	<div>
-		<div class="row">
-			<div class="col-sm-4" id="title">
-				<h1>Crystals Collector!</h1>
-			</div>
-		</div>		
-	</div>	
-	<div>
-		<div class="row">
-			<div class="col-sm-12" id="instructions">
-				<p><strong>You will be given a random number at the start of the game.</strong></p>
-				<p><strong>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</strong></p>
-				<p><strong>You win the game by matching your total score to the random number. You lose the game if your total score goes above the random number.</strong></p>
-				<p><strong>The value of each crystal is hidden from you until you click on it.</strong></p>
-				<p><strong>Each time the game starts, the values associated with each crystal will change as well.</strong></p>
-
-			</div>
-
-		</div>
-	</div>
-	<div>
-		<div class="row">
-			<div class="col-sm-6" id="randomNumberText">
-				<h3>Random Number:</h3>
-				<h3 id="random"></h3>
-			</div>
-			<div class="col-sm-6" id="statusText">
-				<p id="status"></p>
-				<p id="wins">Wins:</p>
-				<p id="losses">Losses:</p>
-			</div>
-		</div>
-
-	</div>
-	<div>
-		<div class="row" id="crystals" class="btn-group" role="group">
-			<div class="col-sm-2" id="crystalOne">
-				<button type="button" class="btn btn-default"><img src="assets/images/ruby.png" height=100px/></button>
-				
-			</div>
-			<div class="col-sm-2" id="crystalTwo">
-				<button type="button" class="btn btn-default"><img src="assets/images/diamond.png" height=100px/></button>
-			</div>
-			<div class="col-sm-2" id="crystalThree">
-				<button type="button" class="btn btn-default"><img src="assets/images/amethyst.png" height=100px/></button>
-				
-			</div>
-			<div class="col-sm-2" id="crystalFour">
-				<button type="button" class="btn btn-default"><img src="assets/images/amber.png" height=100px/></button>
-				
-			</div>
-		</div>
-	</div>
-	<div>
-		<div class="row">
-			<div class="col-sm-6" id="score">
-				<p>Your total score is:</p><p id="newScore"></p>
-			</div>
-		</div>
-	</div>
-	
-
-			
-</div>
-
-<script src="assets/javascript/game.js"></script>
-
+    <div class="container">
+        <h1>You're a Gem!</h1>
+        <div class="row">
+            <div class="col col-xs-10" id="instructions">
+                <h3><strong>Instructions:</strong>
+				</h3>
+				<p>
+                <i class="fa fa-diamond" aria-hidden="true"></i> Each time the game starts, the gem values and the Gem Goal are randomized.
+                <br>
+                <i class="fa fa-diamond" aria-hidden="true"></i> Click on the different crystals to reach the Gem Goal.
+                <br>
+                <i class="fa fa-diamond" aria-hidden="true"></i> Win the game by achieving the exact Gem Goal
+                <br>
+                <i class="fa fa-diamond" aria-hidden="true"></i> Lose the game if you go over the Gem Goal
+                </p>
+                <br>
+            </div>
+            <div class="col col-xs-2" id="statusText">
+                <div style="border: solid 1px white;">
+	                <h4 id="status"></h4>
+	                <h4 id="wins">Wins:</h4>
+	                <h4 id="losses">Losses:</h4>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col col-xs-6" id="randomNumberText">
+                <h3>Gem Goal:  <span id="random"></span></h3>
+            </div>
+            <div class="col col-xs-6" id="score">
+                <h3>Current Score:  <span id="newScore"></span></h3>
+            </div>
+        </div>
+        <div class="row" id="crystals" class="btn-group" role="group">
+            <div class="col col-xs-3" id="crystalOne">
+                <button type="button" class="btn btn-default"><img src="assets/images/ruby.png" class="img-responsive" /></button>
+            </div>
+            <div class="col col-xs-3" id="crystalTwo">
+                <button type="button" class="btn btn-default"><img src="assets/images/diamond.png" class="img-responsive" /></button>
+            </div>
+            <div class="col col-xs-3" id="crystalThree">
+                <button type="button" class="btn btn-default"><img src="assets/images/amethyst.png" class="img-responsive" /></button>
+            </div>
+            <div class="col col-xs-3" id="crystalFour">
+                <button type="button" class="btn btn-default"><img src="assets/images/amber.png" class="img-responsive" /></button>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script src="assets/js/game.js"></script>
 </body>
+
 </html>
